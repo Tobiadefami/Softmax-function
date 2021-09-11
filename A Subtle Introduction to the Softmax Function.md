@@ -11,7 +11,7 @@ Essentially this means that before applying the softmax function, some vector co
 #### Let's introduce some interesting mathematics: 
 
 The standard softmax function $\sigma : \mathbb R^X \to [0,1]^X$ is defined by the formula:
-
+<img src="https://latex.codecogs.com/gif.latex?\sigma(\bold{a})_i = \frac{e^{a_i}}{\sum_{j=1}^Xe_j^a}\;\;\; \forall \;i\in\{1,X\} \;\text{and} \; \bold{a} = (a_i, ..., a_X) \in \mathbb R^X \tag{1} t " /> 
 $$\sigma(\bold{a})_i = \frac{e^{a_i}}{\sum_{j=1}^Xe_j^a}\;\;\; \forall \;i\in\{1,X\} \;\text{and} \; \bold{a} = (a_i, ..., a_X) \in \mathbb R^X \tag{1}$$  
 
 In plain English, it applies the standard exponential function to each element $a_i$ of the input vector **a** and normalizes these values by dividing by the sum of all these exponentials; this normalization ensures that the sum of the components of the output vector $\sigma(\bold{a})$ is 1. 
